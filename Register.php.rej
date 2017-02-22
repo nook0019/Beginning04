@@ -1,0 +1,84 @@
+diff a/Register.php b/Register.php	(rejected hunks)
+@@ -0,0 +1,81 @@
++
++
++ 	
++
++<!DOCTYPE html>
++<html>
++<head>
++	<title>Register เพลินพุง</title>
++	<meta charset="utf-8">
++	<link rel="stylesheet" type="text/css" href="style.css">
++	<meta http-equiv=Content-Type content="text/html; charset=utf-8"> 
++
++</head>
++<body>
++
++<div class="wrapper-box">
++
++<div class="login-box">
++<div class="login-head"><h2>Register</h2>
++<div class="insert-user">
++
++<div class="text-user"></div>
++
++	<form action="?" method="POST">
++
++	<?php
++
++if(isset($_POST['signup_btn'])){
++	
++	include_once 'connectdb.php';
++	$objConnect -> query("set names utf8");
++	$member_name = $_POST['member_name'];
++	$member_phone = $_POST['member_phone'];
++	$member_password= $_POST['member_password'];
++	$status = $_POST['status'];
++
++
++	$sql ="INSERT INTO member (member_name,member_phone,member_password,status) 
++	VALUES ('$member_name','$member_phone','$member_password','$status')";
++
++	$query = mysqli_query($objConnect,$sql);
++
++
++	if (!$query) {
++
++		echo "error";
++
++	}else{
++
++		$message = "Success";
++    	echo "<script type='text/javascript'>alert('$message');</script>";
++	}
++}
++
++?>
++	<h3>Name</h3>
++	<input type="text" name="member_name">
++	<h3>Phone number</h3>
++	<input type="number" name="member_phone">
++	<h3>Password</h3>
++	<input type="password" name="member_password">
++	<br>
++	<input type="hidden" name="status" value="1" />
++
++	<button type="submit" name="signup_btn"><b>Sign up</b></button>
++	<h5>I have an account , Let me to Login.</h5>
++
++	</form>
++
++</div>
++
++
++</div> <!-- login-head -->
++
++</div><!-- login-box -->
++	
++
++</div> <!-- End Wrapper -->
++
++</body>
++</html>
+\ No newline at end of file

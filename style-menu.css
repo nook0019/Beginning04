@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.wrapper-box{
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-image: url(img/bp-bg.png);
+	margin-top: 25px;
+
+}
+.login-box{
+
+	width: 23.5%;
+	height: 570px;
+	background-image: url(img/App03.png);
+	background-origin: content-box; 
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.25);
+	background-origin: initial;
+
+}
+.login-head{
+
+	width: 100%;
+	height: 60px;
+	background-color: #7f5ca7;
+	text-align: center;
+
+
+
+	
+
+}
+.login-head h2{
+
+	color: #fff;
+	font-family: sans-serif;
+	padding-top: 8px;
+
+
+}
+.insert-user{
+
+	
+	margin-top: 50px;
+
+
+}
+.insert-user h3{
+
+	text-align: left;
+	padding-left: 30px;
+	color: #7f5ca7;
+	margin-bottom: 0;
+	margin-top: 20px;
+
+}
+
+.insert-user input[type=text] {
+	width: 75%;
+	height: 25px;
+    border: 2px solid #b19ac9;
+    border-radius: 20px;
+    margin-bottom: 5px;
+  
+
+}
+.insert-user input[type=number] {
+	width: 75%;
+	height: 25px;
+    border: 2px solid #b19ac9;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+}
+.insert-user input[type=password] {
+	width: 75%;
+	height: 25px;
+    border: 2px solid #b19ac9;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+button[type=submit]{
+
+	width: 75%;
+	height: 30px;
+	background-color: #232121;
+    border-radius: 20px;
+    border-style: none;
+    color: #b19ac9;
+    margin-top: 50px;
+
+}
+.Menu-tap{
+	width: 100%;
+	height: 30px;
+	background-color: #7f5ca7;
+}
+
+.Menu-list{
+	width: 50%;
+	height: 30px;
+	float: left;
+	background-color: #7f5ca7;
+}
+.My-order{
+	width: 50%;
+	height: 30px;
+	float: left;
+	background-color: #7f5ca7;
+}
+.Menu-list a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+
+}
+.Menu-list a:hover{
+	color: #7f5ca7;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 65px 10px 50px;
+	transition: background-color 0.3s linear, color 0.3s linear;
+}
+.Menu-list a:active{
+	color: #7f5ca7;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 65px 10px 50px;
+}
+.My-order a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+.My-order a:hover{
+	color: #7f5ca7;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 30px 10px 50px;
+	transition: background-color 0.3s linear, color 0.3s linear;
+}
+.My-order a:active{
+	color: #7f5ca7;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 30px 10px 50px;
+}
+.nav-style{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.nav-style a{
+	padding: 10px 50px 10px 50px;
+    color: #b19ac9;
+    /*border: 2px solid #4C3D29;*/
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #232121;
+    text-decoration: none;
+
+}
+.nav-style a:hover{
+
+    background-color: #7f5ca7;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    
+
+}
+.nav-style li{
+    padding-top: 1.5em;
+    list-style: none;
+}
+
